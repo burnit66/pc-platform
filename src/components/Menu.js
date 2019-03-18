@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import '../css/menu.css'
+import logo from '../assets/images/logo.svg'
 
 class Menu extends Component {
 
@@ -16,13 +18,13 @@ class Menu extends Component {
     render () {
         return (
             <div className="menu-container">
-                <div>
-                    <img src="http://placehold.it/200x50"/>
-                    <ul>
-                        <li>Home</li>
-                        <li>Store</li>
-                        <li>Cart</li>
-                        <li>My Account</li>
+                <div className="container">
+                    <img className="menu-logo" src={ logo }/>
+                    <ul className="menu-item-container">
+                        <li className="menu-item active"><a className="menu-link" href="/">Home</a></li>
+                        <li className="menu-item"><a className="menu-link" href="/store">Store</a></li>
+                        <li className="menu-item"><a className="menu-link" href="/cart">Cart</a></li>
+                        <li className="menu-item"><a className="menu-link" href="/account">My Account</a></li>
                     </ul>
                 </div>
             </div>
