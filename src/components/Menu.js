@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import '../css/menu.css'
 import logo from '../assets/images/logo.svg'
+import Sidebar from '../components/Sidebar'
 
 const scrollMenu = () => {
     var nav = document.getElementById('nav')
@@ -25,12 +26,14 @@ class Menu extends Component {
     }
 
     componentDidMount () {
+        console.log('Mounted Menu')
         scrollMenu()
     }
 
     render () {
         return (
             <div className="menu-container" id="nav">
+                <Sidebar/>
                 <div className="container">
                     <img className="menu-logo" alt="logo" src={ logo }/>
                     <ul className="menu-item-container">
