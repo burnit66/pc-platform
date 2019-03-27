@@ -1,11 +1,18 @@
 .menu-container {
-    background-color: transparent;
     height: auto;
     position: relative;
     z-index: 1;
-    top:0px;
-    position: absolute;
+    top: 0px;
+    position: fixed;
     width: 100%;
+}
+
+.nav-colored {
+    background-color: #000;
+}
+
+.nav-transparent {
+    background-color: transparent;
 }
 
 .menu-container::after {

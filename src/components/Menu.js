@@ -2,6 +2,19 @@ import React, { Component } from 'react'
 import '../css/menu.css'
 import logo from '../assets/images/logo.svg'
 
+const scrollMenu = () => {
+    var nav = document.getElementById('nav')
+    window.addEventListener('scroll', function(event) { 
+        event.preventDefault()
+
+        if (window.scrollY >= 50) {
+            nav.style.backgroundColor = '#111'
+        } else {
+            nav.style.backgroundColor = 'transparent'
+        }
+    })
+}
+
 class Menu extends Component {
 
     constructor (props) {
@@ -12,12 +25,12 @@ class Menu extends Component {
     }
 
     componentDidMount () {
-        console.log('Mounted Menu')
+        scrollMenu()
     }
 
     render () {
         return (
-            <div className="menu-container">
+            <div className="menu-container" id="nav">
                 <div className="container">
                     <img className="menu-logo" alt="logo" src={ logo }/>
                     <ul className="menu-item-container">
