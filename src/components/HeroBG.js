@@ -6,7 +6,7 @@ import HeroCopy from '../components/HeroCopy'
 const vheight = window.innerHeight
 const vwidth = window.innerWidth
 
-const BG = 'url(' + hero + ') no-repeat center center fixed'
+const BG = 'url(' + hero + ') no-repeat top center fixed'
 
 const overlay = {
     width: vwidth,

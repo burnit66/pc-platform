@@ -19,7 +19,7 @@ class Menu extends Component {
         return (
             <div className="menu-container">
                 <div className="container">
-                    <img className="menu-logo" src={ logo }/>
+                    <img className="menu-logo" alt="logo" src={ logo }/>
                     <ul className="menu-item-container">
                         <li className="menu-item active"><a className="menu-link" href="/">Home</a></li>
                         <li className="menu-item"><a className="menu-link" href="/store">Store</a></li>

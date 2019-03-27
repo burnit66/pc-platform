@@ -8,7 +8,44 @@
 .hero-header {
     color: #fff;
     font-size: 5em;
+    font-weight: 800;
     text-transform: uppercase;
     text-align: center;
     vertical-align: middle;
+}
+
+.notbold {
+    font-weight: normal;
+}
+
+.button-primary-container {
+    margin: 0 auto;
+    display: block;
+    width: 350px;
+}
+
+.button-primary-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.button-primary {
+    padding: 20px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    color: #fff;
+    width: 100px;
+    float: left;
+    margin-right: 30px;
+}
+
+.button-primary:hover {
+    transition-duration: 600ms;
+    background-color: #fff;
+    color: #333;
 }

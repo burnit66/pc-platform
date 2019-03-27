@@ -2,6 +2,8 @@ import React from 'react'
 import { BrowserRouter as Redirect, Router, Route, Switch } from "react-router-dom"
 import history from './components/history'
 
+import './css/main.css'
+
 import Home from './pages/Home'
 import NoMatch from './pages/404'
 
