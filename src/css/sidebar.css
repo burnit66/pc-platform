@@ -1,7 +1,166 @@
-.hamburger { 
-    color: #fff;
-    position: absolute;
+.bar {
+    display: block;
+    width: 1.6em;
+    height: 0.15em;
+    margin: 0.4em;
+    border-right: 2em solid #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition-property: -webkit-transform, margin, border-right-color, box-shadow;
+    -webkit-transition-property: margin, border-right-color, -webkit-transform, -webkit-box-shadow;
+    transition-property: margin, border-right-color, -webkit-transform, -webkit-box-shadow;
+    -o-transition-property: transform, margin, border-right-color, box-shadow;
+    transition-property: transform, margin, border-right-color, box-shadow;
+    transition-property: transform, margin, border-right-color, box-shadow, -webkit-transform, -webkit-box-shadow;
+    -webkit-transition-duration: 600ms;
+    -o-transition-duration: 600ms;
+    transition-duration: 600ms;
+    border-radius: 9px;
+}
+
+.bar:nth-of-type(1) {
+    width: .6em;
+    border-right: 1.3em solid #fff;
+}
+
+.bar:nth-of-type(3) {
+    border-right: 1.3em solid #fff;
+    width: 2em;
+}
+
+.shiftRight {
+    margin-left: 60px;
+}
+
+.openNav {
+    width: 120px !important;
+}
+
+
+.navHamburger {
+    position: fixed;
+    left: 40px;
     top: 20px;
-    left: 20px;
+    cursor: pointer;
+    color: #454f62;
+    z-index: 3000;
+}
+
+.main-menu {
+    background: #111;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    width: 0px;
+    overflow: hidden;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    z-index: 1000;
+    -webkit-transition: width .4s ease-in;
+    -moz-transition: width .4s ease-in;
+    -o-transition: width .4s ease-in;
+    transition: width .4s ease-in;
+}
+
+.main-menu>* {
+    z-index: 2;
+}
+
+.main-menu>ul {
+    margin: 7px 0;
+}
+
+.main-menu li {
+    position: relative;
+    display: block;
+    width: 250px;
+    padding: 20px 0px;
+}
+
+.main-menu li>a {
+    position: relative;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #fff;
+    font-family: arial;
+    font-size: 14px;
+    text-decoration: none;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
+}
+
+.main-menu .nav-icon {
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.main-menu .nav-text {
+    position: relative;
+    display: table-cell;
+    text-align: left;
+    width: 120px;
+    cursor: pointer;
+    padding-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.main-menu>ul.logout {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.main-menu>ul.logout li a i {
+    padding-left: 10px;
+}
+
+.main-menu>ul.logout .nav-text {
+    padding: 0px 0px 0px 10px;
+}
+
+nav {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+nav ul,
+nav li {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu li:hover,
+nav.main-menu li.active>a {
+    color: #fff;
+    background-color: #37CD3C;
+}
+
+.profile-pic-container {
+    top: 70px;
+    left: calc(50% - 26px);
+    position: relative;
+    margin-bottom: 85px;
+}
+
+.profile-pic {
+    max-width: 50px;
+    border-radius: 20px;
+}
+
+.logout {
     cursor: pointer;
 }
