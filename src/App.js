@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Redirect, Router, Route, Switch } from "react-router-dom"
-import history from './components/history'
+import history from './history'
 
 import './css/main.css'
 

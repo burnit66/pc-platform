@@ -40,11 +40,22 @@ class Sidebar extends Component {
 
                             </li>
                             <li>
-                                <a onClick={() => window.location.href = '/About'}>
+                                <a onClick={() => window.location.href = '/about'}>
                                     {/* <i className="fas fa-credit-card fa-2x"></i> */}
                                     <span className="nav-text">About</span>
                                 </a>
-
+                            </li>
+                            <li>
+                                <a onClick={() => window.location.href = '/contact'}>
+                                    {/* <i className="fas fa-credit-card fa-2x"></i> */}
+                                    <span className="nav-text">Contact</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a onClick={() => window.location.href = '/blog'}>
+                                    {/* <i className="fas fa-credit-card fa-2x"></i> */}
+                                    <span className="nav-text">Blog</span>
+                                </a>
                             </li>
                             <li>
                                 <a onClick={() => window.location.href = '/profile'}>

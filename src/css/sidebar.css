@@ -33,13 +33,13 @@
 }
 
 .openNav {
-    width: 120px !important;
+    width: 160px !important;
 }
 
 
 .navHamburger {
     position: fixed;
-    left: 40px;
+    left: 60px;
     top: 20px;
     cursor: pointer;
     color: #454f62;
