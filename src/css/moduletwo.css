@@ -1,0 +1,27 @@
+.callout-header {
+    font-size: 2em;
+    text-align: center;
+    padding: 25px 0px;
+    color: #2480fe;
+}
+
+.callout-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.callout {
+    max-width: 300px;
+    padding: 0px 30px;
+}
+
+.callout h3 {
+    text-align: center;
+}
+
+.callout img {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+} 

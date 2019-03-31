@@ -11,3 +11,9 @@ html, body {
     margin: 0 auto;
 }
 
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+

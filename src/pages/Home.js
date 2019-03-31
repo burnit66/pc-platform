@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import Menu from '../components/Menu'
 import HeroBG from '../components/HeroBG'
-import ModuleOne from '../components/ModuleOne'
 import Sidebar from '../components/Sidebar'
 import Hamburger from '../components/Hamburger'
+import ModuleOne from '../components/ModuleOne'
+import ModuleTwo from '../components/ModuleTwo'
+import Footer from '../components/Footer'
 
 class Home extends Component {
 
@@ -19,6 +21,8 @@ class Home extends Component {
                 <Sidebar/>
                 <Menu/>
                 <ModuleOne/>
+                <ModuleTwo/>
+                <Footer/>
             </div>
         )
     }

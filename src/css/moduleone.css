@@ -17,6 +17,10 @@
     width: 50%;
 }
 
+.module-one-image img {
+    width: 90%;
+}
+
 .module-one-copy {
     float: left;
     width: 50%;
